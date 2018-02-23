@@ -1,0 +1,30 @@
+//magiceightball1.class
+
+
+public class magiceightball1
+{
+  //attributes:
+  private String ans1="It is certain";
+  private String ans1="Signs point to yes";
+  private String ans1="Reply hazy try again";
+  private String ans1="Concentrate and ask again";
+  private String ans1="Don't count on it";
+  private String ans1="Outlook not so good";
+
+  
+  
+  **
+    * randbetween: Return a random integer between low and high values
+    * 
+    * @param: low - low value
+    * @param: high - high value
+    * @return: random integer b/w low and high
+    */ 
+   public int randbetween( int low, int high ) {
+      int scale = high - low + 1;
+      int shift = low;
+      int randnum = (int)(Math.random() * scale) + shift;
+      
+      return randnum;
+   }
+} 
